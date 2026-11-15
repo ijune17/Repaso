@@ -6,17 +6,17 @@ public class JuneSillero {
 
         int librosDisponibles = 10;
 
-        System.out.println("Libros iniciales: " + librosDisponibles);
+        mostrarMensaje("Libros iniciales: " + librosDisponibles);
 
         librosDisponibles = actualizarLibros(librosDisponibles, -4);
-        System.out.println("Préstamo realizado.");
+        mostrarMensaje("Préstamo realizado.");
 
         librosDisponibles = actualizarLibros(librosDisponibles, 2);
-        System.out.println("Devolución realizada.");
+        mostrarMensaje("Devolución realizada.");
 
         librosDisponibles = actualizarLibros(librosDisponibles, -15);
 
-        System.out.println("Libros finales: " + librosDisponibles);
+        mostrarMensaje("Libros finales: " + librosDisponibles);
     }
 
     public static int actualizarLibros(int librosActuales, int cantidad) {
@@ -24,10 +24,14 @@ public class JuneSillero {
         int nuevoTotal = librosActuales + cantidad;
 
         if (nuevoTotal < 0) {
-            System.out.println("ERROR: no puede haber libros negativos.");
+            mostrarMensaje("ERROR: no puede haber libros negativos.");
         }
 
         return nuevoTotal;
     }
-}
 
+    // Método auxiliar de refactorización para mostrar los mensajes
+    public static void mostrarMensaje(String mensaje) {
+        System.out.println(mensaje);
+    }
+}

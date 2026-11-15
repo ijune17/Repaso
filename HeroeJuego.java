@@ -9,6 +9,7 @@ public class HeroeJuego {
 
         int nivel = 1;
         int vida = 80;
+<<<<<<< HEAD
 =======
         String clase = "Guerrero";
 
@@ -16,6 +17,9 @@ public class HeroeJuego {
         int vida = 150;
 >>>>>>> ofertas-verano
         int monedas = 10;
+=======
+        int monedas = 17;
+>>>>>>> 1916f7404452e12200598ee5907a51dfdfa0f6ec
 
         double velocidad = 4.5;
 

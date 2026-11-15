@@ -8,7 +8,7 @@ public class HeroeJuego {
 
         int nivel = 1;
         int vida = 80;
-        int monedas = 50;
+        int monedas = 25;
 
         double velocidad = 4.5;
 

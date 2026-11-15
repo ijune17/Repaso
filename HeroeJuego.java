@@ -4,10 +4,10 @@ public class HeroeJuego {
 
         // Variables del personaje
         String nombre = "Alex";
-        String clase = "Mago";
+        String clase = "Arquero";
 
         int nivel = 1;
-        int vida = 100;
+        int vida = 80;
         int monedas = 50;
 
         double velocidad = 4.5;
@@ -25,7 +25,7 @@ public class HeroeJuego {
         System.out.println("¿Tiene mascota? " + tieneMascota);
 
         // El héroe encuentra un tesoro
-        monedas = monedas + 25;
+        monedas = monedas + 10gi;
 
         // Sube de nivel
         nivel = nivel + 1;
